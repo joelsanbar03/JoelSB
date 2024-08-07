@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: rgb(192,192,192);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.header nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.header nav .dropbtn {
+    padding: 7px 20px; 
+    position: relative;
+}
+
+.header nav .dropbtn::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    bottom: 12px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.header nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.header nav .dropdown-content a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 300; 
+    font-size: 20px;
+}
+
+.header nav .dropdown-content a:hover {
+    background-color: #555;
+}
+
+.header nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header nav .dropdown:hover .dropbtn {
+    background-color: #444;
+}
