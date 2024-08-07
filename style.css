@@ -74,6 +74,7 @@ body {
 .header nav .dropdown:hover .dropbtn {
     background-color: #444;
 }
+
 .hero {
     display: flex;
     align-items: center;
@@ -91,8 +92,8 @@ body {
 }
 
 .hero-photo {
-    width: 400px; /* Adjust the size of the photo */
-    height: 400px; /* Keep it square */
+    width: 500px; /* Adjust the size of the photo */
+    height: 500px; /* Keep it square */
     object-fit: cover;
     margin-right: 50px; /* Space between the photo and the text */
 }
@@ -103,25 +104,18 @@ body {
 
 .hero h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 48px;
+    font-size: 64px; /* Increase font size */
     margin: 0 0 10px;
 }
 
 .hero p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 24px; /* Increase font size */
     margin-top: 0;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-@media (max-width: 800px) {
+/* Media Query for smaller screens */
+@media (max-width: 1200px) {
     .hero {
         height: auto;
         padding: 20px;
@@ -132,5 +126,21 @@ footer {
         text-align: center;
     }
 
+    .hero-photo {
+        margin: 0 auto 20px;
+        width: 400px; /* Adjust the size of the photo */
+        height: 400px; /* Keep it square */
+    }
 
+    .hero-text {
+        max-width: none;
+    }
+
+    .hero h1 {
+        font-size: 56px; /* Adjust font size */
+    }
+
+    .hero p {
+        font-size: 22px; /* Adjust font size */
+    }
 }
