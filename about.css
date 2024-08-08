@@ -126,7 +126,7 @@ body {
 
 .hero p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px; /* Increase font size */
+    font-size: 18px; /* Increase font size */
     margin-top: 0;
 }
 
@@ -263,53 +263,7 @@ body {
     }
 
     .hero p {
-        font-size: 20px;
-    }
-
-    .skills h2 {
-        font-size: 48px;
-    }
-
-    .skill p {
-        font-size: 28px;
-    }
-
-    .skills-shop h3 {
-        font-size: 28px;
-    }
-
-    .skills-shop p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .header nav a {
-        padding: 10px;
-        font-size: 20px;
-    }
-
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .hero-photo {
-        width: 300px;
-        height: 300px;
-    }
-
-    .hero h1 {
-        font-size: 56px;
-    }
-
-    .hero p {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .skills h2 {
@@ -355,7 +309,7 @@ body {
     }
 
     .hero p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .skills {
@@ -429,7 +383,7 @@ body {
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .skills h2 {
