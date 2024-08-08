@@ -148,7 +148,7 @@ body {
 .skill p {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .skills-container {
@@ -162,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 170px;
+    max-width: 150px;
 }
 
 .icon-container {
