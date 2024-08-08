@@ -159,6 +159,26 @@ body {
         font-size: 20px; /* Adjust font size */
     }
 }
+.footer {
+    background-color: rgb(192,192,192);
+    padding: 20px 40px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer nav a:hover {
+    text-decoration: underline;
+}
 
 .projects {
     padding: 10px 20px;
