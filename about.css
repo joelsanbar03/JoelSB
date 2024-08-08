@@ -130,59 +130,89 @@ body {
     margin-top: 0;
 }
 
-/* Media Query for when text exceeds image height */
-@media (max-width: 950px) {
-    .hero{
-        padding: 20px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-photo {
-        width: 400px; /* Adjust the size of the photo */
-        height: 400px; /* Keep it square */
-        margin: 0 auto 20px; /* Space between the photo and the text */
-    }
-
-    .hero h1 {
-        font-size: 56px; /* Adjust font size */
-    }
-
-    .hero p {
-        font-size: 20px; /* Adjust font size */
-    }
-}
-
 .skills{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 60px 40px;
 }
 .skills h2{
     font-family: "Montserrat",sans-serif;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 60px;
     text-decoration: underline;
+    margin-bottom: 40px;
 }
-.skills-labels{
+.skill p{
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 32px;
 
 }
-.skills-shop h3{
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+.skills-tech, .skills-platform {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.icon-container img {
+    max-width: 70%;
+    max-height: 70%;
+}
+.icon-container .python-icon {
+    max-width: 300%; 
+    max-height: 300%;
+    transform: translate(-0.5%, -4%); /* Move the image up */
+}
+.skills-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white; 
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.skills-shop h3 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 32px;
+    margin: 0;
 }
-.footer {
-    background-color: rgb(192,192,192);
-    padding: 20px 40px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
+
+.skills-shop p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    max-width: 400px; 
+    text-align: center; 
+    margin: 0;
 }
 
 .footer nav a {
@@ -197,4 +227,143 @@ body {
 
 .footer nav a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-photo {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto 20px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .skills h2 {
+        font-size: 48px;
+    }
+
+    .skill p {
+        font-size: 28px;
+    }
+
+    .skills-shop h3 {
+        font-size: 28px;
+    }
+
+    .skills-shop p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .header nav a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero-photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .skills {
+        padding: 40px 20px;
+    }
+
+    .skills h2 {
+        font-size: 36px;
+    }
+
+    .skill p {
+        font-size: 24px;
+    }
+
+    .icon-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icon-container img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+    .icon-container .python-icon {
+        max-width: 80%; /* Adjust the size of the Python icon for smaller screens */
+        max-height: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .skills-shop {
+        padding: 10px;
+    }
+
+    .skills-shop h3 {
+        font-size: 24px;
+    }
+
+    .skills-shop p {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 10px 20px;
+    }
+
+    .footer nav a {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header nav {
+        flex-direction: column;
+    }
+
+    .header nav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .skills h2 {
+        font-size: 28
+    }
 }
