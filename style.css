@@ -90,75 +90,7 @@ body {
     background-color: #444;
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 40px;
-    background-color: #f4f4f4;
-    height: calc(100vh - 60px); /* Adjust height based on the header height */
-}
 
-.hero-content {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.hero-photo {
-    width: 500px; /* Adjust the size of the photo */
-    height: 500px; /* Keep it square */
-    object-fit: cover;
-    margin-right: 50px; /* Space between the photo and the text */
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 64px; /* Increase font size */
-    margin: 0 0 10px;
-}
-
-.hero p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px; /* Increase font size */
-    margin-top: 0;
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 1200px) {
-    .hero {
-        height: auto;
-        padding: 20px;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-photo {
-        margin: 0 auto 20px;
-        width: 400px; /* Adjust the size of the photo */
-        height: 400px; /* Keep it square */
-    }
-
-    .hero-text {
-        max-width: none;
-    }
-
-    .hero h1 {
-        font-size: 56px; /* Adjust font size */
-    }
-
-    .hero p {
-        font-size: 20px; /* Adjust font size */
-    }
-}
 .footer {
     background-color: rgb(192,192,192);
     padding: 20px 40px;
